@@ -163,6 +163,7 @@ function getLanguageColor(language) {
 
       async function getRepoData() {
         const user = "mharisraza";
+        let skippedRepos = ["mharisraza", "mharisraza.github.io"];
     
         const response = await fetch(`https://api.github.com/users/${user}/repos`);
         const repos = await response.json();
@@ -170,7 +171,7 @@ function getLanguageColor(language) {
         const repoContainer = document.querySelector("#repo-container");
 
         for(let repo of repos) {
-          if(repo.name !== "mharisraza" || repo.name !== "mharisraza.github.io") {
+          if(!skippedRepos.includes(repo.name)) {
             let description = repo.description;
             if (description.length > 70) {
               description = description.substring(0, 70) + "...";
