@@ -1,0 +1,138 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+#hero {
+  -webkit-clip-path: polygon(0 0, 70% 0%, 100% 0, 100% 100%, 80% 97%, 43% 100%, 17% 98%, 0 100%) !important; 
+  
+}
+
+#main-greeting > h1 {
+    font-size: 70px !important;
+    line-height: 1.1;
+}
+
+.wave-emoji {
+    -webkit-animation-duration: 1.8s;
+    animation-duration: 1.8s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: wave;
+    animation-name: wave;
+    display: inline-block;
+    -webkit-transform-origin: 70% 70%;
+    transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(-10deg);
+    }
+    40% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(-10deg);
+    }
+    80% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  #main-greeting > p {
+    font-size: 22px !important;
+  }
+
+ .navbar-brand, .nav-item > a {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+  }
+
+  @media only screen and (max-width: 767px) {
+    #main-greeting {
+        text-align: center !important;
+    }
+    .myphoto {
+        margin-top: 20px;
+    }
+  }
+  
+  .myphoto {
+    border-radius: 100%;
+    height: 300px;
+    border: 10px solid tomato;
+  }
+
+  .start-a-project {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.4s ease;
+  }
+
+  .start-a-project:hover {
+    transform: translateY(-3px);
+  }
+
+  .navbar {
+    padding: 15px;
+  }
+
+  #openSourceProjects > h1 {
+    font-size: 45px !important;
+    line-height: 1.1;
+    color: black;
+  }
+
+  #openSourceProjects > hr {
+    margin: auto;
+    width: 50%;
+    background-color: #5e72e4;
+    height: 5px;
+  }
+
+  .project-name {
+    font-size: 20px !important;
+    color: #32325d !important;
+  }
+
+  .project-name:hover {
+    text-decoration: underline !important;
+  }
+
+  .project-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.4s ease;
+    margin-bottom: 10px;
+  }
+
+  .project-card:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+  }
+
+  .language-dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    margin-right: 0.25rem;
+    display: inline-block;
+  }
+
+  .repo-left-stat {
+    display: flex;
+    float: left;
+}
+
+.repo-right-stat {
+  display: flex;
+  float: right;
+}
+
+.pull-right {
+  float: right;
+  display: flex
+}
